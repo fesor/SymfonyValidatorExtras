@@ -1,0 +1,6 @@
+suites:
+    acme_suite:
+        namespace: Fesor\SymfonyValidationExtras
+        psr4_prefix: Fesor\SymfonyValidationExtras
+        spec_path: tests
+        spec_prefix: unit
