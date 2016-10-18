@@ -11,11 +11,11 @@ If you are dealing with json requests, you probably hate `Collection` validator.
 The difference between `JsonValidator` and `FixedJsonValidator`, which is both extends from `CollectionValidator`, is that
 they use different value for option `allowExtraFields`. `FixedJson` doesn't allow extra fields, but `Json` - just ignores that.
 
-## Shortcuts
+### Shortcuts
 
 This validator provides you some shortcuts for common validators:
 
-```
+```php
 $rules = new FixedJson([
     'foo' => 'string',
     'bar' => 'email',
@@ -62,14 +62,14 @@ $equivalent = new Collection([
     'allowExtraFields' => true,
     'fields' => [
         'foo' => [new Type('string')],
-        'bar' => [new NotNUll(), new Type('string')]
+        'bar' => [new NotNull(), new Type('string')]
     ]
 ]);
 ```
 
 The syntax is taken from PHP 7.1
 
-## Optional fields
+### Optional fields
 
 If your json request has optional keys, then you probably will write something like this:
 
@@ -90,7 +90,7 @@ $rules = new Json([
 Please note that question mark (`?`) will be skipped if you manually provide info about is this field is required or not.
 So using this rule:
 
-```
+```php
 $fules = new Json([
     'foo?' = new Required([new NotNull()]),
     'bar??' => 'string',
