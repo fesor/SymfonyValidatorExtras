@@ -50,7 +50,7 @@ List of available shortcuts:
 ### Null Safety
 
 By default all constraint (except `null`) shortcuts expands with `NotNull` constraint. If `null` is acceptable value
-for you, you can just add question mark at the end of shortcut. So this rules will be equivalent:
+for you, you can just add question mark at the beginning of shortcut. So this rules will be equivalent:
 
 ```
 $rules = new Json([
