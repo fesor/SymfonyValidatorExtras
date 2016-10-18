@@ -1,0 +1,30 @@
+{
+    "name": "fesor/symfony-validator-extra",
+    "description": "Symfony Validator Extras for more simple handling of complex cases",
+    "type": "library",
+    "require": {
+        "symfony/validator": "^3.1"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.1",
+        "phpunit/phpunit": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+           "Fesor\\SymfonyValidatorExtras\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+           "Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Protko",
+            "email": "fesors@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
