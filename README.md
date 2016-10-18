@@ -4,7 +4,7 @@ Symfony Validator Extras
 In order to simplify request validation and reduce amount of boilerplate, this package
 provides you set of additional constraints.
 
-## Json and Fixedjson constraints
+## Json and FixedJson constraints
 
 If you are dealing with json requests, you probably hate `Collection` validator. As a replacement this library provides you two additional constraints: `JsonValidator` and `FixedJsonValidator`.
 
